@@ -57,4 +57,6 @@ Blue: Logistic Regression | Orange: Decision Trees |  Green: SVM  Red: Random Fo
 ![](https://github.com/Jackson-hub/CROPify/blob/main/static/images/crop3.png)
 
 # Demo Video:
-![](https://github.com/Jackson-hub/CROPify/blob/main/static/images/CROPifyDemo.mp4)
+<div align="center">
+  <img src="https://github.com/Jackson-hub/CROPify/blob/main/static/images/CROPifyDemo.mp4" width="250">  
+</div>
