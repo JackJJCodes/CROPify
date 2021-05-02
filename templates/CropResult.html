@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale=1.0>
+    <title>Cropify</title>
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+
+    <!-- Bootstrap Attachments -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{  url_for('static',filename='stylesheets/styles.css')  }}" >
+    <!-- <link rel="stylesheet" href="/static/stylesheets/styles.css"> -->
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <!-- Logo Image -->
+            <img src="/static/images/logo.png" height="50" width="50" alt="cropifyLogo"
+                class="d-inline-block align-middle mr-2 logo">
+            <!-- Logo Text -->
+            <span class="text-uppercase font-weight-bold">Cropify</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+
+    <br>
+    <br>
+
+    <!-- Input Form -->
+    <div class="container">
+
+        <h2>{{ prediction_text }}</h2>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Cards for more info on features -->
+    <section class="white-section">
+
+        <h2 class="section-heading">Information regarding some features</h2>
+
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Importance of Minerals</h3>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://organicnz.org.nz/magazine-articles/role-importance-nitrogen-soil/"
+                            class="links">Nitrogen</a>
+                        <br>
+                        <a href="https://www.dpi.nsw.gov.au/agriculture/soils/improvement/phosphorous#:~:text=Phosphorus%20is%20one%20of%20the,for%20seedlings%20and%20young%20plants."
+                            class="links">Phosphorus</a>
+                        <br>
+                        <a href="https://www.smart-fertilizer.com/articles/potassium-in-plants/#:~:text=Potassium%20triggers%20activation%20of%20enzymes,of%20Adenosine%20Triphosphate%20(ATP).&text=Both%20uptake%20of%20water%20through,plants%20require%20potassium%20as%20well."
+                            class="links">Potassium</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Importance of Temperature and Humidity Level</h3>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://eos.com/blog/soil-temperature/#:~:text=Soil%20Temperature%20As%20A%20Factor%20Of%20Crops%20Development&text=The%20temperature%20of%20soil%20is,soil%20temperature%20for%20seed%20germination."
+                            class="links">Temperature</a>
+                            <br>
+                        <a href="https://weather.msfc.nasa.gov/landprocess/#:~:text=Soil%20moisture%20is%20a%20key,and%20the%20production%20of%20precipitation"
+                        class="links">Humidity Level</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Importance of PH value and Rainfall Level</h3>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://hortnews.extension.iastate.edu/2002/5-24-2002/soilph.html#:~:text=A%20pH%20of%207%20indicates,and%207.5%20(slightly%20alkaline)."
+                            class="links">PH Value</a>
+                            <br>
+                        <a href="https://www.sigfox.com/en/news/how-rainfall-affects-crop-health#:~:text=Soil%20is%20also%20greatly%20affected,mold%20growth%20in%20the%20soil."
+                        class="links">Rainfall Level</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <section class="back-button">
+        <a class="btn btn-primary" href="{{ url_for('home') }}" role="button">Back</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Grid row -->
+            <div class="row">
+                <div class="col-lg-6 col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Cropify</h5>
+
+                    <p class="submission-text">
+                        This project is my submission for HackDSC 2021.
+                    </p>
+                    <p class="legend">Made with ☕ by NorthKeys</p>
+                    <p class="legend">&copy; Copyright 2021 Jackson Jacob</p>
+                </div>
+                <!-- Logo -->
+                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                    <img src="/static/images/northkeysLogo.jpg" width="120" height="130" alt="logo"
+                        class="img-responsive northkeysLogo">
+                </div>
+                <!-- Grid column -->
+                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-0 reference">Reference Links</h5>
+
+                    <ul class="list-unstyled mb-0 reference">
+                        <li>
+                            <a href="http://www.kerenvis.nic.in/Database/Crops_2419.aspx" class="text-light">Information
+                                on Rabi and
+                                Kharif crops</a>
+                        </li>
+                        <li>
+                            <a href="https://krishijagran.com/agripedia/different-types-of-crops-seasons-kharif-rabi-and-zaid/"
+                                class="text-light">Information
+                                on Rabi, Kharif and Zaid crops</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End of Grid column -->
+            </div>
+            <!-- End of Grid row -->
+        </div>
+        <!-- End of Grid container -->
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+
+</body>
+
+
+
+
+
+</html>

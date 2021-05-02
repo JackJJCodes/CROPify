@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale=1.0>
+    <title>CROPify</title>
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+
+    <!-- Bootstrap Attachments -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{  url_for('static',filename='stylesheets/styles.css')  }}" >
+    <!-- <link rel="stylesheet" href="/static/stylesheets/styles.css"> -->
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <!-- Logo Image -->
+            <img src="/static/images/logo.png" height="50" width="50" alt="cropifyLogo"
+                class="d-inline-block align-middle mr-2 logo">
+            <!-- Logo Text -->
+            <span class="text-uppercase font-weight-bold">Cropify</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+
+    <!-- Jumbotron(About us) -->
+    <div class="container">
+        <div class="jumbotron">
+            <img src="/static/images/jumbo1.jpg" class="img-fluid" alt="Responsive Image" srcset="">
+            <div class="jumbo-text">
+                <h1 class="display-4">About Me</h1>
+                <p class="lead">Hey there, I am Jackson(aka NorthKeys). I'm a student, reader and a Machine Learning
+                    Enthusiast.
+                    I try to create workable and fully deployable API's for Machine Learning Models.</p>
+                <p> This is my submission for HackDSC. More about it<a href="https://github.com/Jackson-hub"
+                        > here</a></p>
+                <hr class="my-4">
+                <p class="problem-statement">
+                <h2>Problem Statement</h1>
+                    </p>
+                    <p style="font-size:20px">Traditional cropping patterns are not effective in today's rapidly changing, unpredicted climate
+                        and
+                        polluted soils. Likewise, every region is unique in relation to each other and has various
+                        properties.
+                        Your goal is to design a system to predict the most suitable crop for that region, harvest time,
+                        plantation pattern and maintenance of that crop for better yield utilizing information like soil
+                        quality, weather, resources and other factors that affect crop production.</p>
+                    <p style="font-size:20px" class="my-contr">Keeping this in mind, I have created a web application which will help farmers
+                        to
+                        identify the best crop
+                        that they can grow in their respective fields, keeping in mind all the properties discussed
+                        before.
+                    </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Input Form -->
+    <div class="container">
+        <form action="\predict" method="post">
+
+            <div class="row">
+                <!-- Input for Nitrogen -->
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Nitrogen Level</h5>
+                            <input type="number" name="nitrogen" placeholder="Ratio of Nitrogen" id="nitrogen-input"
+                                required="required">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Input for Phosphorus -->
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Phosphorus Level</h5>
+                            <input type="number" name="phosphorus" placeholder="Ratio of Phosphorus"
+                                id="phosphorus-input" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="row">
+                <!-- Input for Potassium -->
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Potassium Level</h5>
+                            <input type="number" name="potassium" placeholder="Ratio of Potassium" id="potassium-input"
+                                required="required">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Input for Temperature -->
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Temperature</h5>
+                            <input type="number" name="temperature" placeholder="In °C" id="temperature-input"
+                                required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="row">
+                <!-- Input for Humidity -->
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Humidity Level</h5>
+                            <input type="number" name="humidity" placeholder="Relative humidity in %"
+                                id="humidity-input" required="required">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Input for Temperature -->
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">PH Level</h5>
+                            <input type="number" name="ph-level" placeholder="PH value of the soil" id="ph-input"
+                                required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+
+            <div class="row">
+                <!-- Input for Rainfall -->
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-body" align="center">
+                            <h5 class="card-title" align="center">Rainfall Level</h5>
+                            <input type="number" name="rainfall" placeholder="Rainfall in mm" id="rainfall-input"
+                                required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <!-- Submit Button -->
+            <input href="CropResults.html" type="submit" value="Submit" class="btn btn-dark">
+            <br>
+            <!-- <div class="container" id="small-text">
+                <small id="inputHelp" class="form-text">The information you enter in this site is never
+                    stored.</small>
+            </div> -->
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- <h3>{{ prediction_text }}</h3> -->
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Grid row -->
+            <div class="row">
+                <div class="col-lg-6 col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Cropify</h5>
+
+                    <p class="submission-text">
+                        This project is my submission for HackDSC 2021.
+                    </p>
+                    <p class="legend">Made with ☕ by NorthKeys</p>
+                    <p class="legend">&copy; Copyright 2021 Jackson Jacob</p>
+                </div>
+                <!-- Logo -->
+                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                    <img src="/static/images/northkeysLogo.jpg" width="120" height="130" alt="logo"
+                        class="img-responsive northkeysLogo">
+                </div>
+                <!-- Grid column -->
+                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-0 reference">Reference Links</h5>
+
+                    <ul class="list-unstyled mb-0 reference">
+                        <li>
+                            <a href="http://www.kerenvis.nic.in/Database/Crops_2419.aspx" class="text-light">Information
+                                on Rabi and
+                                Kharif crops</a>
+                        </li>
+                        <li>
+                            <a href="https://krishijagran.com/agripedia/different-types-of-crops-seasons-kharif-rabi-and-zaid/"
+                                class="text-light">Information
+                                on Rabi, Kharif and Zaid crops</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End of Grid column -->
+            </div>
+            <!-- End of Grid row -->
+        </div>
+        <!-- End of Grid container -->
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+
+
+
+
+</html>

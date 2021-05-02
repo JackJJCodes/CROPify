@@ -1,0 +1,72 @@
+html {
+    background: url(/static/images/bg2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    background-color: whitesmoke;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+}
+
+.navbar {
+    background-color: #37eb37;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+}
+
+.nav-link {
+    color: whitesmoke;
+}
+
+.text-uppercase, .submission-text, .legend {
+    color: white;
+}
+
+.reference {
+    text-align: center;
+}
+
+.northkeysLogo {
+    position: relative;
+    right: 70px;
+}
+
+.logo {
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.jumbotron {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.problem-statement {
+    color: white;
+}
+
+.img-fluid {
+    margin-bottom: 20px;
+}
+
+.card-body {
+    color: white;
+    font-weight: bolder;
+}
+
+.btn {
+    margin-bottom: 20px;
+}
+
+.form-text {
+    color: Black;
+}
+
+#small-text {
+    background-color: blacksmoke;
+}
