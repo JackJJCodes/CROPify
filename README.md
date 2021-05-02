@@ -7,3 +7,25 @@ A Flask-based web application for farmers to find out the crops which can grow p
 Traditional cropping patterns are not effective in today's rapidly changing, unpredicted climate and polluted soils. Likewise, every region is unique in relation to each other and has various properties. Your goal is to design a system to predict the most suitable crop for that region, harvest time, plantation pattern and maintenance of that crop for better yield utilizing information like soil quality, weather, resources and other factors that affect crop production.
 <p> 
 Keeping this in mind, I have created a web application which will help farmers to identify the best crop that they can grow in their respective fields, keeping in mind all the properties discussed before.
+
+# Tech Stack Used:
+<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>
+<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
+<code><img height="30" src="https://github.com/tomchen/stack-icons/raw/master/logos/bootstrap.svg"></code>
+<code><img height="30" src="https://symbols.getvecta.com/stencil_80/56_flask.3a79b5a056.jpg"></code>
+<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"></code>
+<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
+<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></code>
+<code><img height="30" src="https://raw.githubusercontent.com/numpy/numpy/7e7f4adab814b223f7f917369a72757cd28b10cb/branding/icons/numpylogo.svg"></code>
+<code><img height="30" src="https://raw.githubusercontent.com/pandas-dev/pandas/761bceb77d44aa63b71dda43ca46e8fd4b9d7422/web/pandas/static/img/pandas.svg"></code>
+<code><img height="30" src="https://matplotlib.org/_static/logo2.svg"></code>
+<code><img height="30" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1280px-Scikit_learn_logo_small.svg.png"></code>
+
+# Data-set Used:
+For this application, I used datasets from Kaggle.
+- [Crop Recommendation ](https://www.kaggle.com/atharvaingle/crop-recommendation-dataset) 
+
+# Algorithms Used:
+I have used a variety of algorithms for this problem, namely Logistic Regression, Decision Trees, SVM, Random Forest to name a few.
+<br>
+For me, Random Forest has worked wonders, as it gave me 100% accuracy.
