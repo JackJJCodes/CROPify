@@ -77,3 +77,7 @@ Blue: Logistic Regression | Orange: Decision Trees |  Green: SVM  Red: Random Fo
  1. The designing part of the web application is in a bit of mess😅.
  2. The UI could be improved.
  3. The web application is a bit slow during rendering. So anything to help speed up rendering would be great. 
+
+# Hosting:
+This application is hosted on Heroku:
+https://cropify-northkeys.herokuapp.com/
