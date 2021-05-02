@@ -1,3 +1,6 @@
+<div class="logo">
+    <img src="https://github.com/Jackson-hub/CROPify/blob/main/static/images/logo.png" height="500px" width="100%">
+</div>
 # CROPify
 A Flask-based web application for farmers to find out the crops which can grow perfectly on their fields.
 
