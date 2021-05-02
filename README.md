@@ -46,6 +46,12 @@ Blue: Logistic Regression | Orange: Decision Trees |  Green: SVM  Red: Random Fo
 6. PH Value: PH value of the soil.
 7. Rainfall: The amount of rainfall(In mm).
 
+# Functionalities of this application:
+ 1. On putting features like nitrogen %, phosphorus % etc, a farmer could find out which crop will suit his field the best.
+ 2. The farmer would also know the type of crop to field(for eg; a Rabi, or a Kharif crop). The application will also provide the suitable sowing and harvesting dates for the crops.
+ 3. After finding out the name of the crop, the farmer could also find out the importance of each feature; so as to get more acquainted with how the different features affect the soil.
+
+
 #### To run this on your machine:
 1. Make sure you have Python3, Flask installed.
 2. In you terminal, cd to the folder you got this project in, and type <b><i>python run app.py<i></b>
