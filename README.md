@@ -29,3 +29,31 @@ For this application, I used datasets from Kaggle.
 I have used a variety of algorithms for this problem, namely Logistic Regression, Decision Trees, SVM, Random Forest to name a few.
 <br>
 For me, Random Forest has worked wonders, as it gave me 100% accuracy.
+If you want an in-depth explaination on random Forest and how do they work, feel free to checkout <a href = "https://towardsdatascience.com/understanding-random-forest-58381e0602d2">this article</a>. 
+![](https://github.com/Jackson-hub/CROPify/blob/main/static/images/comparision.png)
+<br>
+Blue: Logistic Regression | Orange: Decision Trees |  Green: SVM  Red: Random Forest |
+
+# Features Used:
+### The features used to solve this problem are:
+1. Nitrogen Level: The percentage of nitrogen present in the soil.
+2. Phosphorus Level: The percentage of phosphorus present in the soil.
+3. Potasium Level: The percentage of potassium present in the soil.
+4. Temperature: Temperature of the soil.
+5. Humidity Level: Percentage of humidity of the soil.
+6. PH Value: PH value of the soil.
+7. Rainfall: The amount of rainfall(In mm).
+
+#### To run this on your machine:
+1. Make sure you have Python3, Flask installed.
+2. In you terminal, cd to the folder you got this project in, and type <b><i>python run app.py<i></b>
+3. And voila!!
+
+# Screenshots:
+![](https://github.com/Jackson-hub/CROPify/blob/main/static/images/crop1.png)
+<br>
+![](https://github.com/Jackson-hub/CROPify/blob/main/static/images/crop2.png)
+<br>
+![](https://github.com/Jackson-hub/CROPify/blob/main/static/images/crop3.png)
+
+# Demo Video:
