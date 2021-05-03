@@ -76,6 +76,7 @@ You can access the presentation <a href="https://docs.google.com/presentation/d/
 # Future Improvements:
  1. An Crop Disease predictor could be added to this application. It could take input in for of an image, and predict if it is diseased or not.
  2. A feature in which after a farmer finds out about the most suitable crop, he could directy call any supplier of the said crop.
+ 3. This web application is not mobile-first. So if anyone out there could make it mobile-reponsive, that'd be great.
 
 # Issues:
  1. The designing part of the web application is in a bit of mess😅.
