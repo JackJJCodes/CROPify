@@ -115,4 +115,9 @@ body {
 
 .section-heading {
     margin-bottom: 30px;
+    color: White;
+}
+
+.card-header {
+    color: White;
 }
