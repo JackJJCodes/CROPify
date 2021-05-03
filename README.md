@@ -35,8 +35,6 @@ If you want an in-depth explaination on random Forest and how do they work, feel
 <br>
 ![](https://github.com/Jackson-hub/CROPify/blob/main/static/images/comparisionCROPify.png)
 <br>
-Blue: Logistic Regression | Orange: Decision Trees |  Green: SVM  Red: Random Forest |
-<br>
 # Features Used:
 ### The features used to solve this problem are:
 1. Nitrogen Level: The percentage of nitrogen present in the soil.
@@ -86,3 +84,4 @@ You can access the presentation <a href="https://docs.google.com/presentation/d/
 # Hosting:
 This application is hosted on Heroku:
 https://cropify-northkeys.herokuapp.com/
+P.S: It will take a ittle time to get started, but it's worth the wait!
