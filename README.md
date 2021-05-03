@@ -84,4 +84,5 @@ You can access the presentation <a href="https://docs.google.com/presentation/d/
 # Hosting:
 This application is hosted on Heroku:
 https://cropify-northkeys.herokuapp.com/
+<br>
 P.S: It will take a ittle time to get started, but it's worth the wait!
