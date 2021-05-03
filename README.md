@@ -54,7 +54,7 @@ Blue: Logistic Regression | Orange: Decision Trees |  Green: SVM  Red: Random Fo
 
 #### To run this on your machine:
 1. Make sure you have Python3, Flask installed.
-2. In you terminal, cd to the folder you got this project in, and type <b><i>python run app.py<i></b>
+2. In your terminal, cd to the folder you got this project in, and type <b><i>python run app.py<i></b>
 3. And voila!!
 
 # Screenshots:
