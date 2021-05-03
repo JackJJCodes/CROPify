@@ -70,6 +70,9 @@ Blue: Logistic Regression | Orange: Decision Trees |  Green: SVM  Red: Random Fo
   <img src="https://github.com/Jackson-hub/CROPify/blob/main/static/images/CROPifydemolast.gif" width="100%">  
 </div>
 
+# Explanation Presentation:
+You can access the presentation <a href="https://docs.google.com/presentation/d/1kEqwQipxB7r72Ew_C2hjVFVZkyzEVBj5MPVLlRcQSkI/edit?usp=sharing">here</a>
+
 # Future Improvements:
  1. An Crop Disease predictor could be added to this application. It could take input in for of an image, and predict if it is diseased or not.
  2. A feature in which after a farmer finds out about the most suitable crop, he could directy call any supplier of the said crop.
